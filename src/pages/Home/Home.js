@@ -44,7 +44,7 @@ export default function Home() {
                     </Animated>
                     <Animated animationIn="fadeInUp" animationInDuration="1500">
                     {(second && isDesktop) ? (
-                        <Link to="">
+                        <Link to="/resume">
                             <p 
                                 className="animate clickable" 
                                 onMouseLeave={() => setSecond(false)}
@@ -58,7 +58,7 @@ export default function Home() {
                     </Animated>
                     <Animated animationIn="fadeInUp" animationInDuration="2500">
                     {(third && isDesktop) ? (
-                        <Link to="">
+                        <Link to="/portfolio">
                             <p 
                                 className="animate clickable" 
                                 onMouseLeave={() => setThird(false)}
