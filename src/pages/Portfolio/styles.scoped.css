@@ -15,6 +15,11 @@
   color: #DEBB00 !important; 
 }
 
+.portfolio > h3 {
+  color: #DEBB00 !important; 
+  margin-top: 5rem;
+}
+
 
 @media only screen and (max-width: 768px) {
   .portfolio {
@@ -22,5 +27,8 @@
   }
   .portfolio > nav {
     align-self: unset;
+  }
+  .portfolio > h3 {
+    margin-top: 80px;
   }
 }

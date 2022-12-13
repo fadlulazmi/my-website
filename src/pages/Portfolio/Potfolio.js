@@ -21,6 +21,7 @@ export default function Potfolio() {
                 <span style={{color: '#DEBB00'}}>Portfolio</span>
             </Breadcrumb.Item>
         </Breadcrumb>
+        <h3>Sorry, This page is under construction...</h3>
       </div>
     </Animated>
   )
