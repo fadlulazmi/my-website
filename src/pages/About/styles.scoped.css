@@ -1,0 +1,217 @@
+.about {
+    width: 99vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 5rem 54rem 28.5rem;
+    direction: rtl;
+    background-image: url('../../assets/16.png');
+    background-repeat: no-repeat;
+    transition: ease-in-out;
+    background-position-y: bottom;
+    background-blend-mode: soft-light;
+    background-size: 38rem;
+}
+
+.about > div:not(:last-child) {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    direction: ltr;
+    background-color: rgba(0,0,0,0);
+    padding-top: 2rem;
+}
+
+.about > nav:last-child {
+    margin-top: 1rem;
+    background: none;
+    direction: ltr;
+    color: #DEBB00 !important; 
+}
+
+.about > nav:last-child span {
+    color: #DEBB00 !important; 
+}
+
+.about > nav:last-child > span > span {
+    color: #DEBB00 !important; 
+}
+
+.about > nav:last-child > a {
+    color: #DEBB00 !important; 
+}
+
+.about > div:not(:last-child) > div {
+    background: none;
+}
+
+.about > div:not(:last-child) > div > p {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    text-align: left;
+    background-color: rgba(0,0,0,0);
+    transition: 2s;
+    color: #DEBB00;
+}
+
+.about > div:not(:last-child) > div:not(:first-child) > p {
+    color: #ffffff;
+    font-size: 0.875rem;
+    text-align: justify;
+    padding-top: 1.25rem;
+    font-weight: 300;
+}
+
+.about > div:not(:last-child) > div:nth-child(2) > p:first-child {
+    text-align: right;
+}
+
+.about > div:not(:last-child) > div:nth-child(2) {
+    padding-bottom: 2rem;
+    border-bottom: #ffff dashed 0.1rem;
+}
+
+.about > div:not(:last-child) > div:nth-child(3) {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.about > div:not(:last-child) > div:nth-child(3) > p {
+    color: #DEBB00;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.about > div:not(:last-child) > div:nth-child(3) > p:first-child {
+    min-width: 5rem;
+    padding-right: 1.25rem;
+    height: 2rem;
+    align-self: center;
+    font-weight: 700;
+    transform: rotate(-90deg);
+}
+
+.about > div:not(:last-child) > div:nth-child(3) > p:last-child {
+    width: 30rem;
+}
+
+.about > div:not(:last-child) > div:nth-child(3) > p:last-child > b {
+    font-weight: 700;
+}
+
+.about > div:not(:last-child) > div:nth-child(4) {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.about > div:not(:last-child) > div:nth-child(4) > div {
+    margin-top: 3rem;
+    display: flex;
+    width: 35rem;
+    border: #DEBB00 solid 0.05rem;
+    height: 11.5rem;
+    justify-content: space-between;
+}
+
+.about > div:not(:last-child) > div:nth-child(4) > div > img {
+    height: 11.45rem;
+    object-fit: contain;
+    align-content: center;
+    margin-left: 1rem;
+}
+
+.about > div:not(:last-child) > div:nth-child(4) > div > p {
+    padding: 0.5rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.about > div:not(:last-child) > div:nth-child(4) > div > p > b {
+    font-weight: 700;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .about {
+        grid-template-columns: 80px auto 181px;
+    }
+    .about > div > div > p {
+        font-size: 16px !important;
+    }
+    .about > div:not(:last-child) {
+      padding-top: 20%;
+    }
+    .about > div:not(:last-child) > div:nth-child(3) {
+      margin-top: 24px;
+    }
+    .about > div:not(:last-child) > div:nth-child(3) > p:last-child {
+      width: 80%;
+    }
+    .about > div:not(:last-child) > div:nth-child(4) > div { 
+      width: 75%;
+      height: fit-content;
+    }
+    .about > div:not(:last-child) > div:nth-child(4) > div > img {
+      width: 95px;
+      height: stretch;
+      object-fit: contain;
+      align-self: center;
+      background-color: red;
+    } 
+    .about > div:not(:last-child) > div:nth-child(4) > div > p{ 
+      font-size: 16px !important;
+    }
+    .about > nav:last-child {
+      margin: 24px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+  .about {
+      display: flex;
+      grid-template-columns: unset;
+      flex-direction: column-reverse;
+      padding: 24px 16px;
+      justify-content: flex-end;
+  }
+  .about > div > div > p {
+      font-size: 16px !important;
+  }
+  .about > div:not(:last-child) {
+    padding-top: 0;
+  }
+  .about > div:not(:last-child) > div:nth-child(3) {
+    margin-top: 24px;
+  }
+  .about > div:not(:last-child) > div:nth-child(3) > p:first-child {
+    height: auto;
+    white-space: nowrap;
+    width: 25px;
+    margin-right: 16px;
+  }
+  .about > div:not(:last-child) > div:nth-child(3) > p:last-child {
+    width: 100%;
+  }
+  .about > div:not(:last-child) > div:nth-child(4) > div { 
+    width: stretch;
+    height: fit-content;
+    background-color: transparent;
+  }
+  .about > div:not(:last-child) > div:nth-child(4) > div > img {
+    width: 95px;
+    height: stretch;
+    object-fit: contain;
+    align-self: center;
+    background-color: red;
+  } 
+  .about > div:not(:last-child) > div:nth-child(4) > div > p{ 
+    background-color: transparent;
+    font-size: 16px !important;
+  }
+  .about > nav:last-child {
+    margin: 24px;
+    align-self: center;
+  }
+}

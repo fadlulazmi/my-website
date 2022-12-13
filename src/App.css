@@ -1,0 +1,7 @@
+* {
+  background-color: #1D1D1D;
+}
+
+:root {
+  font-size: calc(100vw * 16 / 1440);
+}
